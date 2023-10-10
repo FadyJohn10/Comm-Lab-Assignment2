@@ -108,6 +108,9 @@ nav a {
 }
 
 @media (max-width: 992px) {
+  .cover{
+    width: 100%;
+  }
   .content{
     margin: 10px 5px !important;
   }
