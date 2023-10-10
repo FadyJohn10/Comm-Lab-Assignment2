@@ -104,8 +104,28 @@ nav a {
     border: 3px solid #000;
     border-bottom: 9px solid #000;
     padding: 15px;
+    overflow: hidden;
 }
 
+.cover{
+  border: 5px solid;
+    border-bottom: 10px solid;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 992px) {
+  .content{
+    margin: 10px 5px !important;
+  }
+  .gallery-container{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .clock{
+    margin: 0 -10px !important;
+  }
+}
 
 .gallery{
 	display: grid;
@@ -187,15 +207,15 @@ img {
 
 #choose-me1, #choose-me2, #choose-me3, .choose-me{
   position: absolute;
-  top: 300px;
-  margin-left: 130px;
+  top: 44%;
+  margin-left: 16%;
   background: #000;
   color: white;
   border: 2px solid;
   border-bottom: 4px solid;
   border-radius: 5px;
   padding: 4px 8px;
-  width: 120px;
+  width: 17%;
 }
 .choose-me2{
   margin-left: 370px;
