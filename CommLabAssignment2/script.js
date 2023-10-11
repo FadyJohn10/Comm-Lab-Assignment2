@@ -188,8 +188,11 @@ $(document).ready(function(){
     // })
 
     nextBtn.addEventListener('click', () => {
-    ++currentSlide
-    if (currentSlide >= slidesNumber) currentSlide = 0
+    if (currentSlide == slidesNumber-1){
+
+    }else{
+      currentSlide++;
+    }
     
     updateSlider()
     })

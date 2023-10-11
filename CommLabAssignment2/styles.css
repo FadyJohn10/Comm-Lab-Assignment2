@@ -85,6 +85,7 @@ nav a {
     border-radius: 50%;
     border: 4px solid;
     border-bottom: 8px solid;
+    margin-top: 25px;
 }
 
 .about h3{
@@ -120,6 +121,10 @@ nav a {
   }
   .clock{
     margin: 0 -10px !important;
+  }
+  .choose-me{
+    padding: 4px 2px !important;
+    font-size: 9px;
   }
 }
 
@@ -201,24 +206,24 @@ img {
   display: inline-block;
 }
 
-#choose-me1, #choose-me2, #choose-me3, .choose-me{
+.choose-me{
   position: absolute;
   top: 44%;
-  margin-left: 16%;
+  margin-left: 14%;
   background: #000;
   color: white;
   border: 2px solid;
   border-bottom: 4px solid;
   border-radius: 5px;
   padding: 4px 8px;
-  width: 17%;
+  width: 20%;
 }
 .choose-me2{
-  margin-left: 370px;
+  margin-left: 46%;
 }
 
 .choose-me3{
-  margin-left: 550px;
+  margin-left: 72%;
   width: 100px;
 }
 
