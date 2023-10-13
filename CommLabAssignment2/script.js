@@ -4,6 +4,7 @@ let option1 = false;
 let option2 = false;
 let option3 = false;
 let firstCheck = false;
+let clicked = false;
 
 let slide6 = document.getElementById("slide6");
 let slide7 = document.getElementById("slide7");
@@ -52,7 +53,7 @@ function choice1(choice){
         option3 = true;
     }
 
-    button1.onclick = function() {
+  button1.onclick = function() {
           choice2(1);
   };
   button2.onclick = function() {
@@ -61,7 +62,8 @@ function choice1(choice){
   button3.onclick = function() {
           choice2(3);
   };
-    nextBtn.click();
+  clicked = true;
+  nextBtn.click();
 }
 
 function choice2(choice){
@@ -115,6 +117,7 @@ function choice2(choice){
   }
   firstCheck = true;
   lastChoice();
+  clicked = true;
   nextBtn.click();
 }
 
@@ -169,6 +172,7 @@ $(document).ready(function(){
     const nextBtn = document.querySelector('.next')
 
     const slides = document.querySelector('.slider-slides')
+    const slide = document.querySelectorAll('.slider-slide');
     const slidesNumber = slides.children.length
 
     let currentSlide = 0
@@ -180,18 +184,15 @@ $(document).ready(function(){
     slides.setAttribute('style', `transform: translate(${offset}px)`)
     }
 
-    // previousBtn.addEventListener('click', () => {
-    // --currentSlide
-    // if (currentSlide < 0) currentSlide = slidesNumber - 1
-    
-    // updateSlider()
-    // })
-
     nextBtn.addEventListener('click', () => {
-    if (currentSlide == slidesNumber-1){
+    let btnsearch = slide[currentSlide].querySelector('.choose-me');
+    if(btnsearch != null && !clicked){
 
+    }else if (currentSlide == slidesNumber-1){
+      location.reload();
     }else{
       currentSlide++;
+      clicked = false;
     }
     
     updateSlider()
